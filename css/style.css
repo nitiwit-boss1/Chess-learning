@@ -1,0 +1,194 @@
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+:root {
+    --yellow: hsl(60, 89%, 49%);
+    --black: rgb(8, 0, 0)#000000;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*  Header section */
+
+header {
+    height: 850px;
+    background: url("../img/S__4513799.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    nav {
+        .nav-wrapper {
+            position: relative;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .discount-title {
+        .discount-title-wrapper {
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            .discount-title-box {
+                width: 55rem;
+                margin: 0.65rem;
+                h1 {
+                    font-size: clamp(2rem, 10VW, 6.85rem);
+                    text-transform: uppercase;
+                }
+                p {
+                    font-size: clamp(1rem, 10VW, 1.87rem);
+                }
+            }
+        }
+    }
+}
+
+
+/* chess piece movement section */
+
+.chess-piece-movement {
+    background: url("../img/S__4513802.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    color: var(--black);
+    overflow: hidden;
+    .chess-piece-movement-title {
+        margin: 3rem 0;
+        text-align: center;
+        h2 {
+            font-size: clamp(2rem, 10VW, 3.875rem);
+            text-transform: uppercase;
+        }
+    }
+}
+
+.chess-piece-movement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    transform: translate(30px);
+    gap: 20px;
+    h3 {
+        font-size: clamp(2rem, 10VW, 2rem);
+        margin: 1rem 0;
+        text-align: center;
+        transform: translate(-25px)
+    }
+}
+
+.chess-piece-movement-item img {
+    height: 80%;
+    width: 80%;
+    border-radius: 25px;
+    position: relative;
+    transition: .4s;
+    position: relative;
+}
+
+.chess-piece-movement-item {
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.chess-piece-movement-item img:hover {
+    transform: translateY(-15px);
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    transform: translate(-70px)
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    li {
+        margin-left: 50px;
+        margin-top: 50px;
+        transform: translate(50px);
+    }
+    a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 20px;
+    }
+    a:hover {
+        color: aqua;
+    }
+}
+
+
+/* bobby fischer section */
+
+.Bobby {
+    background: url(../img/123.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    .Bobby-wrapper {
+        display: flex;
+        align-items: center;
+        height: 800px;
+        .Boby-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            .Bobby-img {
+                img {
+                    width: 100%;
+                }
+            }
+            .Bobby-info {
+                max-width: 580px;
+                width: 100%;
+                color: var(--white);
+                padding: 1rem;
+                h2 {
+                    font-size: clamp(2rem, 10vw, 3.625rem);
+                    text-transform: uppercase;
+                }
+                p {
+                    font-size: clamp(1.5rem, 15vw, 1.5rem);
+                    margin-top: 2rem;
+                    color: rgb(210, 210, 210);
+                }
+                .Bobby-btn {
+                    background-color: #000000;
+                    color: #FFFFFF;
+                    max-width: 20rem;
+                    width: 100%;
+                    height: 4rem;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    text-decoration: none;
+                    border-radius: 25px;
+                    margin-top: 3.75rem;
+                    font-size: 25px;
+                    transform: translate(77px)
+                }
+            }
+        }
+    }
+}
